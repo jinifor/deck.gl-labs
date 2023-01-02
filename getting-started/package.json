@@ -13,6 +13,7 @@
     "@deck.gl/core": "^8.8.21",
     "@deck.gl/layers": "^8.8.21",
     "@deck.gl/react": "^8.8.21",
-    "deck.gl": "^8.8.21"
+    "deck.gl": "^8.8.21",
+    "typescript": "^4.9.4"
   }
 }
