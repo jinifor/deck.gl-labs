@@ -44,17 +44,6 @@ const AIR_PORTS =
         onClick: info =>
           // eslint-disable-next-line
           info.object && alert(`${info.object.properties.name} (${info.object.properties.abbrev})`)
-      }),
-      new ArcLayer({
-        id: 'arcs',
-        data: AIR_PORTS,
-        dataTransform: d => d.features.filter(f => f.properties.scalerank < 4),
-        // Styles
-        getSourcePosition: f => [-0.4531566, 51.4709959], // London
-        getTargetPosition: f => f.geometry.coordinates,
-        getSourceColor: [0, 128, 200],
-        getTargetColor: [200, 0, 80],
-        getWidth: 1
       })
     ]
   });
